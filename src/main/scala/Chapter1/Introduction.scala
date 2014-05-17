@@ -1,4 +1,4 @@
-package Chapter1
+package Chapter2
 
 object Introduction extends App {
 	def isPalindrome(word: String) = {
@@ -7,5 +7,6 @@ object Introduction extends App {
 		modifiedWord == reversed
 	}
 
-	println("Is 'Herculaneum' a palindrome? " + isPalindrome("Herculaneum"))
+	val givenString = args.mkString
+	println("Is '" + givenString + "' a palindrome? " + isPalindrome(givenString))
 }
