@@ -3,7 +3,7 @@ package Chapter1
 object Introduction extends App {
 	def isPalindrome(word: String) = {
 		val modifiedWord = word.toLowerCase.replaceAll("[^a-z0-9]", "")
-		val reversed = modifiedWord.reversed
+		val reversed = modifiedWord.reverse
 		modifiedWord == reversed
 	}
 
